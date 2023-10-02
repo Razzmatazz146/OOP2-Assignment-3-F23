@@ -27,8 +27,12 @@ public class Deck extends CardCollection implements CardSource {
         return myCard;
     }
 
-    public void sort() {
+    public void sortSuit() {
         this.aCards.sort(new SuitFirstComparator());
+    }
+
+    public void sortRank() {
+        this.aCards.sort(new RankFirstComparator());
     }
 
     public boolean isEmpty() {

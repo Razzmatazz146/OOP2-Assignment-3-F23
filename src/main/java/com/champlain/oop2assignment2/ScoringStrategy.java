@@ -8,4 +8,3 @@ public interface ScoringStrategy {
         return cards.size();
     }
 }
-

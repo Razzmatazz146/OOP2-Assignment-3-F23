@@ -30,8 +30,16 @@ public class DeckController {
     }
 
     @FXML
-    protected void onSortButtonClick() {
-        aDeckTextArea.setText("This does not sort anything yet.");
+    protected void onSortSuitButtonClick() {
+        // aDeckTextArea.setText("This does not sort anything yet.");
+        this.aDeck.sortSuit();
+        this.displayCardCollections();
+    }
+
+    @FXML
+    protected void onSortRankButtonClick() {
+        this.aDeck.sortRank();
+        this.displayCardCollections();
     }
 
     @FXML
